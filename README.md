@@ -5,9 +5,11 @@ Un sitio web moderno, dinámico y responsive diseñado para Bellator Gym, inspir
 
 ## 📸 Vista previa
 
+
 <p align="center">
-  <img src="preview.png" alt="Vista previa del sitio Bellator Gym" width="700">
+  <img src="preview.png" alt="Vista previa del sitio Bellator Gym" width="100%">
 </p>
+
 
 ---
 📌 Características principales
