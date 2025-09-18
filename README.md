@@ -76,4 +76,22 @@ AWS Amplify → Escalabilidad empresarial.
 
 🌍 Sitio oficial: en construcción
 
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **HTML5**  
+- **CSS3 (Flexbox, Grid, Animaciones)**  
+- **JavaScript (animaciones y efectos dinámicos)**  
+
+---
+
+## 📥 Instalación y uso
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/WilmerSanchez333/bellator-gym.git
+
+
 © 2024 Bellator Gym. Todos los derechos reservados.
