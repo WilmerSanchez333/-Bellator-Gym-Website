@@ -1,0 +1,199 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #eee;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --------------------- NAVBAR --------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #ff6200;
+  cursor: default;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+nav ul li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #ff6200;
+}
+
+/* --------------------- HERO --------------------- */
+.hero.parallax-section {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+  position: relative;
+  color: white;
+  text-align: left;
+}
+
+.parallax-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero-text small {
+  color: #ff6200;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.btn-hero {
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  border: none;
+  background: #ff6200;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: inline-block;
+}
+
+.btn-hero:hover {
+  background: #cc4f00;
+}
+
+/* --------------------- BLOQUES --------------------- */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+
+.box h2 {
+  font-size: 1.6rem;
+  color: #ff6200;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.box p, .box ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.box ul {
+  padding-left: 1.2rem;
+}
+
+.box ul li {
+  margin-bottom: 0.5rem;
+  list-style: disc;
+}
+
+/* --------------------- FOOTER --------------------- */
+footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  background: #1a1a1a;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #333;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* --------------------- RESPONSIVE --------------------- */
+@media(max-width: 900px) {
+  nav ul {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .box {
+    flex: 1 1 100%;
+  }
+}
